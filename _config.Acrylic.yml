@@ -51,9 +51,9 @@ nav:
     #     宝藏博主:
     #       url: javascript:travelling()
     #       icon: fas fa-bus
-    # 即刻:
-    #     url: /says #使用一级菜单，关闭二级菜单，点击后跳转到/says
-    #     child:
+    关于:
+        url: /about #使用一级菜单，关闭二级菜单，点击后跳转到/says
+        child:
     # 仓库:
     #     url: https://github.com/rootlexblog
     #     child:
@@ -159,7 +159,7 @@ aside:
         url: wuqi_y@163.com
     button:
       text: 个人主页
-      url: /
+      url: /about
 
   flip:
     color: '#0099FF'
@@ -253,11 +253,11 @@ post:
     wordcount: true
     readtime: true
     pv: true
-    comment: false      
+    comment: true      
   award:
-    enable: false
-    wechat:
-    alipay:
+    enable: true
+    wechat: /img/wechat.png
+    alipay: /img/alipay.jpg
     url:
   covercolor: #文章cover取色  
     enable: true
@@ -296,7 +296,7 @@ thirdparty:
   wordcount: false
   busuanzi: 
     enable: false
-    usecomment: false #当评论系统开启时文章页面使用评论系统的统计数据
+    usecomment: true #当评论系统开启时文章页面使用评论系统的统计数据
   search:
     algolia_search:
       enable: false
@@ -317,9 +317,9 @@ thirdparty:
 
 # 评论
 comment:
-  enable: false
+  enable: true
   twikoo:
-    envId:
+    envId: https://hexo-comm.wuwang.love
     # region: ap-shanghai
     path: window.location.pathname
 
